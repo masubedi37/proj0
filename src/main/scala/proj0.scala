@@ -2,8 +2,6 @@
 object proj0 {
   def main(args: Array[String]): Unit = {
   var name = readLine("Enter your name:  ")
-    println("Enter your age: ")
-    var age = readInt()
     println("Enter your current bank statement: ")
     var bank_st = readLong()
     println("Enter your Credit Score: ")
