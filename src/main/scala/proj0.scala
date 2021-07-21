@@ -1,7 +1,12 @@
  import scala.io.StdIn._
+import org.apache.orc.impl.mask.DoubleIdentity
 object proj0 {
   def main(args: Array[String]): Unit = {
-  var name = readLine("Enter your name:  ")
+  println("Enter your name:  ")
+  var name =readLine()
+    println("Enter your age: ")
+    var age = readInt()
+    
     println("Enter your current bank statement: ")
     var bank_st = readLong()
     println("Enter your Credit Score: ")
@@ -10,31 +15,38 @@ object proj0 {
     var monthly_income = readLong()
     println("Enter your monthly expenses: ")
     var monthly_expenses  = readLong()
-    println("Enter the Loan amount you to borrow: ")
+    println("Enter the loan amount you want to borrow: ")
     var loanAmt = readLong()
+
     var DI = DI_ratio(monthly_expenses, monthly_income)
+    
     var Req = reqInfo(loanAmt,DI,bank_st,credit_score)
 }
 def DI_ratio (monthly_expenses:Long, monthly_income:Long):Float ={
-  var DoI = monthly_expenses/monthly_income
-  return DoI
+  var x = monthly_expenses/monthly_income.toFloat
+
+  return x
 }
-  def reqInfo(loanAmt:Long, DoI:Float,bank_st:Long, credit_score:Int) {
+  def reqInfo(loanAmt:Long,DoI:Float,bank_st:Long, credit_score:Int) {
 
-  val rDownPayment = 0.15*loanAmt
-   val reqBankB = rDownPayment + (0.04*loanAmt)
-   val reqDE = 0.50
-   val reqCS = 700 
+  var rDownPayment = 0.15*loanAmt
+   var reqBankB = rDownPayment + (0.04*loanAmt)
+   var reqDE = 0.50
+   var reqCS = 700 
+  var checknbal = DoI
+    
+    if (checknbal > reqDE){
+     println("YOUR INCOME IS LOWER THAN REQUIRED")}
 
-   if (credit_score < reqCS){
-     println("Your credit score is lower than required")}
-     else if(DoI > reqDE){
-       println("Your income is lower than required")}
-       else if(bank_st < reqBankB){
-         println("Please try for lower Loan Amount")
-       }
-else{
-  println("Congratulation you are PRE-QUALIFIED. Schedule your appointment with us for next step")
+      else if(bank_st < reqBankB ){
+  
+         println("PLEASE TRY FOR ANOTHER LOAN AMOUNT")}
+        
+         else if(credit_score < reqCS){
+       println("YOUR CREDIT SCORE IS LOWER THAN REQUIRED")}
+       else{
+  println("CONGRATULATIONS YOU ARE PRE-QUALIFIED. SCHEDULE AN APPOINTMENT WITH US FOR NEXT STEP")
 }
      }
-   }
+     }
+   
