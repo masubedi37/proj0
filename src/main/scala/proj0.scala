@@ -29,8 +29,8 @@ def DI_ratio (monthly_expenses:Long, monthly_income:Long):Float ={
 }
   def reqInfo(loanAmt:Long,DoI:Float,bank_st:Long, credit_score:Int) {
 
-  var rDownPayment = 0.15*loanAmt
-   var reqBankB = rDownPayment + (0.04*loanAmt)
+  var rDownPayment = 0.20*loanAmt
+   var reqBankB = rDownPayment + (0.05*loanAmt)
    var reqDE = 0.50
    var reqCS = 700 
   var checknbal = DoI
