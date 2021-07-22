@@ -3,10 +3,9 @@ import org.apache.orc.impl.mask.DoubleIdentity
 object proj0 {
   def main(args: Array[String]): Unit = {
   println("Enter your name:  ")
-  var name =readLine()
+    var name =readLine()
     println("Enter your age: ")
     var age = readInt()
-    
     println("Enter your current bank statement: ")
     var bank_st = readLong()
     println("Enter your Credit Score: ")
@@ -30,9 +29,9 @@ def DI_ratio (monthly_expenses:Long, monthly_income:Long):Float ={
   def reqInfo(loanAmt:Long,DoI:Float,bank_st:Long, credit_score:Int) {
 
   var rDownPayment = 0.20*loanAmt
-   var reqBankB = rDownPayment + (0.05*loanAmt)
-   var reqDE = 0.50
-   var reqCS = 700 
+  var reqBankB = rDownPayment + (0.05*loanAmt)
+  var reqDE = 0.50
+  var reqCS = 700 
   var checknbal = DoI
     
     if (checknbal > reqDE){
@@ -40,13 +39,14 @@ def DI_ratio (monthly_expenses:Long, monthly_income:Long):Float ={
 
       else if(bank_st < reqBankB ){
   
-         println("PLEASE TRY FOR ANOTHER LOAN AMOUNT")}
+         println("PLEASE TRY FOR A LOWER LOAN AMOUNT")}
         
          else if(credit_score < reqCS){
-       println("YOUR CREDIT SCORE IS LOWER THAN REQUIRED")}
+       
+          println("YOUR CREDIT SCORE IS LOWER THAN REQUIRED")}
        else{
   println("CONGRATULATIONS YOU ARE PRE-QUALIFIED. SCHEDULE AN APPOINTMENT WITH US FOR NEXT STEP")
 }
      }
-     }
+    }
    
