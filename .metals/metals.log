@@ -4444,3 +4444,85 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 [0m2021.07.21 17:39:56 INFO  Trying to attach to remote debuggee VM 127.0.0.1:55944 .[0m
 [0m2021.07.21 17:39:56 INFO  Attaching to debuggee VM succeeded.[0m
 [0m2021.07.21 17:39:56 INFO  Enter your name:  [0m
+[0m2021.07.21 20:45:56 INFO  compiling vs-code-example (1 scala source)[0m
+[0m2021.07.21 20:45:58 INFO  time: compiled vs-code-example in 2.81s[0m
+[0m2021.07.21 20:47:14 INFO  Deduplicating compilation of vs-code-example from bsp client 'Metals 0.10.5' (since 4h 29m 5.23s)[0m
+[0m2021.07.21 20:47:14 INFO  compiling vs-code-example (1 scala source)[0m
+[0m2021.07.21 20:47:14 INFO  compiling vs-code-example (1 scala source)[0m
+[0m2021.07.21 20:47:17 INFO  time: compiled vs-code-example in 3.02s[0m
+[0m2021.07.21 20:47:25 INFO  Listening for transport dt_socket at address: 62856[0m
+[0m2021.07.21 20:47:26 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\14694\AppData\Local\scalameta\metals\cache\dap-server.trace.json[0m
+[0m2021.07.21 20:47:29 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\14694\AppData\Local\scalameta\metals\cache\dap-client.trace.json[0m
+[0m2021.07.21 20:47:29 INFO  Starting debug proxy for [proj0][0m
+[0m2021.07.21 20:47:30 INFO  Trying to attach to remote debuggee VM 127.0.0.1:62856 .[0m
+[0m2021.07.21 20:47:30 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.07.21 20:47:30 INFO  Enter your name:  [0m
+[0m2021.07.21 20:48:30 INFO  compiling vs-code-example (1 scala source)[0m
+[0m2021.07.21 20:48:32 INFO  time: compiled vs-code-example in 2.46s[0m
+[0m2021.07.21 21:25:57 INFO  Started: Metals version 0.10.5 in workspace 'C:\Users\14694\OneDrive\Desktop\vs Code Example' for client Visual Studio Code 1.58.2.[0m
+[0m2021.07.21 21:25:58 INFO  time: initialize in 0.88s[0m
+[0m2021.07.21 21:26:03 INFO  Attempting to connect to the build server...[0m
+[0m2021.07.21 21:26:03 WARN  no build target for: C:\Users\14694\OneDrive\Desktop\vs Code Example\src\main\scala\proj0.scala[0m
+[0m2021.07.21 21:26:04 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 42157'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.07.21 21:26:08 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+Jul 21, 2021 9:26:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11
+Jul 21, 2021 9:26:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.07.21 21:26:11 INFO  time: code lens generation in 2.83s[0m
+[0m2021.07.21 21:26:11 INFO  time: code lens generation in 7.29s[0m
+[0m2021.07.21 21:26:11 INFO  time: code lens generation in 7.25s[0m
+[0m2021.07.21 21:26:11 INFO  time: code lens generation in 2.9s[0m
+[0m2021.07.21 21:26:11 INFO  time: code lens generation in 3s[0m
+[0m2021.07.21 21:26:11 INFO  time: code lens generation in 2.86s[0m
+[0m2021.07.21 21:26:11 INFO  time: code lens generation in 2.95s[0m
+[0m2021.07.21 21:26:11 INFO  time: code lens generation in 3.21s[0m
+[0m2021.07.21 21:26:11 INFO  time: code lens generation in 2.92s[0m
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.8-19-4d9f966b...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from 'c:\Users\14694\OneDrive\Desktop\vs Code Example\.bloop'...
+[0m[32m[D][0m Loading project from 'c:\Users\14694\OneDrive\Desktop\vs Code Example\.bloop\vs-code-example.json'
+[0m[32m[D][0m Loading project from 'c:\Users\14694\OneDrive\Desktop\vs Code Example\.bloop\vs-code-example-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+[0m[32m[D][0m   => C:\Users\14694\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\jline\jline\2.14.3\jline-2.14.3.jar
+[0m[32m[D][0m   => C:\Users\14694\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-parser-combinators_2.11\1.0.4\scala-parser-combinators_2.11-1.0.4.jar
+[0m[32m[D][0m   => C:\Users\14694\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-xml_2.11\1.0.5\scala-xml_2.11-1.0.5.jar
+[0m[32m[D][0m   => C:\Users\14694\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.11.12\scala-compiler-2.11.12.jar
+[0m[32m[D][0m   => C:\Users\14694\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.11.12\scala-library-2.11.12.jar
+[0m[32m[D][0m   => C:\Users\14694\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.11.12\scala-reflect-2.11.12.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'vs-code-example-test', 'vs-code-example'
+[0m[32m[D][0m Missing analysis file for project 'vs-code-example-test'
+[0m[32m[D][0m Loading previous analysis for 'vs-code-example' from 'C:\Users\14694\OneDrive\Desktop\vs Code Example\target\streams\compile\bloopAnalysisOut\_global\streams\inc_compile_2.11.zip'.
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:42157...
+The server is listening for incoming connections at tcp://127.0.0.1:42157...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.07.21 21:26:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\14694\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.07.21 21:26:13 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 21675'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:21675...
+The server is listening for incoming connections at tcp://127.0.0.1:21675...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.07.21 21:26:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\14694\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.07.21 21:26:14 INFO  time: Connected to build server in 10s[0m
+[0m2021.07.21 21:26:14 INFO  Connected to Build server: Bloop v1.4.8-19-4d9f966b[0m
+[0m2021.07.21 21:26:15 INFO  time: Imported build in 0.41s[0m
+[0m2021.07.21 21:26:15 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+Jul 21, 2021 9:26:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 67
+[0m2021.07.21 21:26:39 INFO  time: indexed workspace in 24s[0m

@@ -12,17 +12,17 @@ object proj0 {
     var credit_score = readInt()
     println("Enter your monthly income: ")
     var monthly_income = readLong()
-    println("Enter your monthly expenses: ")
-    var monthly_expenses  = readLong()
+    println("Enter your monthly payments including rent,credit cards, loans and mortgage: ")
+    var monthly_payments  = readLong()
     println("Enter the loan amount you want to borrow: ")
     var loanAmt = readLong()
 
-    var DI = DI_ratio(monthly_expenses, monthly_income)
+    var DI = DI_ratio(monthly_payments, monthly_income)
     
     var Req = reqInfo(loanAmt,DI,bank_st,credit_score)
 }
-def DI_ratio (monthly_expenses:Long, monthly_income:Long):Float ={
-  var x = monthly_expenses/monthly_income.toFloat
+def DI_ratio (monthly_payments:Long, monthly_income:Long):Float ={
+  var x = monthly_payments/monthly_income.toFloat
 
   return x
 }
