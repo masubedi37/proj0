@@ -22,9 +22,9 @@ object proj0 {
     var Req = reqInfo(loanAmt,DI,bank_st,credit_score)
 }
 def DI_ratio (monthly_payments:Long, monthly_income:Long):Float ={
-  var x = monthly_payments/monthly_income.toFloat
+  var DoI = monthly_payments/monthly_income.toFloat
 
-  return x
+  return DoI
 }
   def reqInfo(loanAmt:Long,DoI:Float,bank_st:Long, credit_score:Int) {
 
