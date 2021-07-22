@@ -30,7 +30,7 @@ def DI_ratio (monthly_payments:Long, monthly_income:Long):Float ={
 
   var rDownPayment = 0.20*loanAmt
   var reqBankB = rDownPayment + (0.05*loanAmt)
-  var reqDE = 0.50
+  var reqDE = 0.42
   var reqCS = 700 
   var checknbal = DoI
     
